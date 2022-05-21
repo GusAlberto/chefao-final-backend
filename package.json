@@ -23,8 +23,8 @@
     "type": "git",
     "url": "github.com/wendersonjunior/chefao-final-backend"
   },
-  "author": "Gustavo, Hellen, Wenderson",
-  "license": "ISC",
+  "author": "Gustavo Alberto <gustavoasouzasilva@gmail.com>, Hellen Viana <hellenmarcalviana@gmail.com>, Wenderson Junior <wendersonej.74@gmail.com>",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "nodemon": "^2.0.16"

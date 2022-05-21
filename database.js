@@ -1,8 +1,8 @@
-//database.js
+//Conexão com Mongoose que conecta ao MongoDB
 const mongoose = require("mongoose");
 
  function connectToDatabase() {
-  mongoose.connect(process.env.DATABSE_URL, {
+  mongoose.connect(process.env.DATABASE_URL, {
      useNewUrlParser: true,
      useUnifiedTopology: true,
   });  
@@ -12,6 +12,11 @@ const mongoose = require("mongoose");
   db.modelNames("open", () => console.log("Connected to the data base!"));
 }
 
+function findAll() {
+    return global.conn.collection("customers").find().toArray();
+}
+ 
+module.exports = { findAll }
 module.exports = connectToDatabase;
 
 
