@@ -12,10 +12,6 @@
     "authProviders":{
        "local":{
           "password":"$2y$10$9rAv1jn9xwrKqswcJdoj7Opamz06GSqKayLTdo176VcUFVBfNufdG"
-       },
-       "facebook":{
-          "id":"4236331356448658",
-          "accessToken":"EAAHbMMWqrwQBAJhp8C9bCkNVi4BYvCJ79wSlRNMncZB61xdTprHTreGSZAKZBl18ZBeUfF3xPWSCdFdbrMEfCHC6i4yoZBaf0sH8MDZBTVEysqNa7FlGJEqfzANeMS4XTjlq2dihHkiVHPZBEVtRL6Up9ODBS6cezcLDuvjylOpsAZDZD"
        }
     },
     "createdAt":{
