@@ -49,7 +49,7 @@ Abaixo segue o que foi utilizado na criação deste projeto:
 
 - [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5).
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript).
-- [Node+Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction)
+- [Node+Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction).
 - [Git+GitHub](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git).
 - [Postman](https://www.postman.com/company/about-postman/).
 

@@ -1,4 +1,4 @@
-/*Imports*/
+/*IMPORTAÇÕES*/
 
 require('dotenv').config()
 const express = require('express')
@@ -7,10 +7,8 @@ const jwt = require('jsonwebtoken')
 
 const app = express();
 
-app.use(express.json());
-
 //Config JSON response
-app.use(express.json())
+app.use(express.json());
 
 // Models
  const User = require('./models/User')
@@ -21,13 +19,12 @@ app.get('/', (req,res) => {
 })
 
 // CREDENCIAIS
-const dbUser = process.env.DB_USER
-const dbPassword = process.env.DB_PASSWORD
+
+const DATABASE_URL = process.env.DATABASE_URL
 
 //CONECTAR AO BANCO DE DADOS
-
 //Conexão com Mongoose que conecta ao MongoDB
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
  function connectToDatabase() {
   mongoose.connect(process.env.DATABASE_URL, {
@@ -48,9 +45,9 @@ app.get('/user/:id', checkToken, async (req, res) => {
   const id = req.params.id
 
   // VERIFICAR SE O USUÁRIO EXISTE
-  const user = await User.findById(id, '-password')
+  const User = await User.findById(id, '-password')
 
-  if(!user) {
+  if(!User) {
     return res.status(404).json({ msg: 'Usuário não encontrado!'})
   }
 
@@ -82,23 +79,23 @@ app.post('/auth/register', async(req, res) => {
   const { name, lastName, email, password, confirmpassword } = req.body
 
   // VALIDAÇÕES
-  if(!name) {
+  if (!name) {
     return res.status(422).json({ msg: 'O nome é obrigatório!' }) 
   }  
 
-  if(!lastName) {
+  if (!lastName) {
     return res.status(422).json({ msg: 'O último nome é obrigatório!' }) 
   }  
 
-  if(!email) {
+  if (!email) {
     return res.status(422).json({ msg: 'O e-mail é obrigatório!' }) 
   }  
 
-  if(!password) {
+  if (!password) {
     return res.status(422).json({ msg: 'A senha é obrigatória!' }) 
   }  
 
-  if(!password!== confirmpassword) {
+  if (password !== confirmpassword) {
     return res.status(422).json({ msg: 'As senhas não conferem!' }) 
   }  
 
@@ -114,7 +111,7 @@ app.post('/auth/register', async(req, res) => {
   const passwordHash = await bcrypt.hash(password, salt)
 
   // CRIANDO USUÁRIO
-  const user = new User({
+  const User = new User ({
     name,
     lastName,
     email,
@@ -122,7 +119,7 @@ app.post('/auth/register', async(req, res) => {
   })
 
   try {
-    await user.save()
+    await User.save()
 
     res.status(201).json({ msg: 'Usuário criado com sucesso' })
   } catch(error) {
