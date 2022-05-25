@@ -10,17 +10,12 @@ Repositório referente ao desafio chefão final do Bootcamp Gama Academy. Evento
 	:heavy_check_mark: Desafio Equipe#5 da turma Hacker's da Gama Experience :heavy_check_mark:
 </h4>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DanielObara/Gama-Academy-Challenge01?color=%2304D361">
+  <img alt="GitHub language count" src="">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/DanielObara/Gama-Academy-Challenge01">
-
-  <a href="https://github.com/DanielObara/Gama-Academy-Challenge01/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DanielObara/Gama-Academy-Challenge01">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/DanielObara/Gama-Academy-Challenge01/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/DanielObara/Gama-Academy-Challenge01?style=social">
+  
   </a>
 </p>
 
@@ -46,15 +41,17 @@ Repositório referente ao desafio chefão final do Bootcamp Gama Academy. Evento
 
 ## Sobre o Projeto 💻
 
-Este projeto é destinado aos alunes da stack Hacker do Gama Experience. O projeto visa a criação de uma calculadora de churrasco no qual será utilizado o número de pessoas para o resultado da quantidade necessária de carne, acompanhamentos e bebidas vulgo cerveja 🍺 😁.
+Este projeto é feito por alunes da stack Hacker do Gama Experience. O projeto visa a criação de uma aplicação no qual será possível encontrar a maior diversidade de eventos em Belo Horizonte-MG e região metropolitana.
 
 ### Feito Com 🚀
 
-Abaixo segue o que foi utilizado na criação deste template:
+Abaixo segue o que foi utilizado na criação deste projeto:
 
 - [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5).
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript).
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS.)
+- [Node+Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction)
+- [Git+GitHub](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git).
+- [Postman](https://www.postman.com/company/about-postman/).
 
 <!-- GETTING STARTED -->
 
@@ -114,7 +111,9 @@ This project is under the MIT license. See the [LICENSE](https://github.com/wend
 
 ## Contato
 
-Made with ♥ by TeamHacker's :wave: [Get in touch!]
-(https://www.linkedin.com/in/gustavo-alberto/)
-(https://www.linkedin.com/in/hellen-viana/)
-(https://www.linkedin.com/in/wenderson-junior-b4a10417b/)
+Made with ♥ by TeamHacker's :wave:
+👇[Get in touch!]👇
+
+<p>•[Gustavo Alberto](https://www.linkedin.com/in/gustavo-alberto/)</p>
+<p>•[Hellen Viana](https://www.linkedin.com/in/hellen-viana/)</p>
+<p>•[Wenderson Júnior](https://www.linkedin.com/in/wenderson-junior-b4a10417b/)</p>
