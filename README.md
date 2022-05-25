@@ -114,20 +114,20 @@ Made with ♥ by TeamHacker's :wave:
 
 <p>👇[Get in touch!]👇</p>
 
-<p><strong>💻•Gustavo Alberto</strong> 
+<p><strong>💻 Gustavo Alberto</strong> 
   <a href="https://br.linkedin.com/in/gustavo-alberto">
    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
   </a>
 </p>
 
-<p><strong>💻•Hellen Viana</strong>
+<p><strong>💻 Hellen Viana</strong>
   <a href="https://www.linkedin.com/in/hellen-viana/">
     <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
   </a>
 </p>
 
-<p><strong>💻•Wenderson Júnior</strong>
+<p><strong>💻 Wenderson Júnior</strong>
   <a href="https://www.linkedin.com/in/wenderson-junior-b4a10417b/">
-    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px""><
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
   </a>
 </p>
