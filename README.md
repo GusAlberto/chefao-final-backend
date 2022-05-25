@@ -1,23 +1,18 @@
-# chefao-final-backend
+# chefao-final-backend <!-- substituir pelo nome do projeto -->
 
-Repositório referente ao desafio chefão final do Bootcamp Gama Academy. Evento este realizado em Belo Horizonte no ano de 2022.
+Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Academy, realizado em Belo Horizonte no ano de 2022.
+
+> Status: Developing ⚠️
+
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/wendersonjunior/chefao-final-backend/blob/main/LICENSE)
 
 <h1 align="center">
     <img alt="GamaAcademy" title="#GamaAcademy" src=".github/logo.png" width="250px" />
 </h1>
 
 <h4 align="center"> 
-	:heavy_check_mark: Desafio Equipe#5 da turma Hacker's da Gama Experience :heavy_check_mark:
+	:star: Desafio Gama: Hackers do Squad #5 :star:
 </h4>
-<p align="center">
-  <img alt="GitHub language count" src="">
-
-  </a>
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-  
-  </a>
-</p>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -47,17 +42,17 @@ Este projeto é feito por alunes da stack Hacker do Gama Bootcamp #1. O projeto 
 
 Abaixo segue o que foi utilizado na criação deste projeto:
 
-- [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5).
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript).
-- [Node+Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction).
-- [Git+GitHub](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git).
-- [Postman](https://www.postman.com/company/about-postman/).
+- [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Node+Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction)
+- [Git+GitHub](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git)
+- [Postman](https://www.postman.com/company/about-postman/)
 
 <!-- GETTING STARTED -->
 
 ## Começando 🏁
 
-Para conseguir utilizar o template basta fazer o download do projeto ou clonando utilizando o Git em seu terminal.
+Para conseguir utilizar o template basta fazer o download do projeto ou clonar utilizando o Git em seu terminal.
 
 ```bash
 
@@ -66,12 +61,12 @@ $ git clone https://github.com/wendersonjunior/chefao-final-backend
 
 ```
 
-### Pré-requisitos :large_orange_diamond:
+#### Pré-requisitos :large_orange_diamond:
 
-- Editor de texto [VSCode](https://code.visualstudio.com/)
-- Base de programação (JS/Node/Express).
+- Editor de texto: [VSCode](https://code.visualstudio.com/)
+- Base de programação: [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)/[Node+Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction)
 
-### Estrutura de Arquivos :clipboard:
+#### Estrutura de Arquivos :clipboard:
 
 A estrutura de arquivos atual está da seguinte maneira:
 
