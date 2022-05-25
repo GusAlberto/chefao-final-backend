@@ -41,7 +41,7 @@ Repositório referente ao desafio chefão final do Bootcamp Gama Academy. Evento
 
 ## Sobre o Projeto 💻
 
-Este projeto é feito por alunes da stack Hacker do Gama Experience. O projeto visa a criação de uma aplicação no qual será possível encontrar a maior diversidade de eventos em Belo Horizonte-MG e região metropolitana.
+Este projeto é feito por alunes da stack Hacker do Gama Bootcamp #1. O projeto visa a criação de uma aplicação no qual será possível encontrar a maior diversidade de eventos em Belo Horizonte-MG e região metropolitana.
 
 ### Feito Com 🚀
 
@@ -69,7 +69,6 @@ $ git clone https://github.com/wendersonjunior/chefao-final-backend
 ### Pré-requisitos :large_orange_diamond:
 
 - Editor de texto [VSCode](https://code.visualstudio.com/)
-- Ter assistido as aulas anteriores.
 - Base de programação (JS/Node/Express).
 
 ### Estrutura de Arquivos :clipboard:
@@ -77,7 +76,7 @@ $ git clone https://github.com/wendersonjunior/chefao-final-backend
 A estrutura de arquivos atual está da seguinte maneira:
 
 ```bash
-Gama-Academy-Challenge01
+CHEFÃO-FINAL-BACKEND
 ├── .github/logo.png
 ├── src/
 │   └── main.js
@@ -112,8 +111,23 @@ This project is under the MIT license. See the [LICENSE](https://github.com/wend
 ## Contato
 
 Made with ♥ by TeamHacker's :wave:
-👇[Get in touch!]👇
 
-<p>•[Gustavo Alberto](https://www.linkedin.com/in/gustavo-alberto/)</p>
-<p>•[Hellen Viana](https://www.linkedin.com/in/hellen-viana/)</p>
-<p>•[Wenderson Júnior](https://www.linkedin.com/in/wenderson-junior-b4a10417b/)</p>
+<p>👇[Get in touch!]👇</p>
+
+<p><strong>💻•Gustavo Alberto</strong> 
+  <a href="https://br.linkedin.com/in/gustavo-alberto">
+   <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
+  </a>
+</p>
+
+<p><strong>💻•Hellen Viana</strong>
+  <a href="https://www.linkedin.com/in/hellen-viana/">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
+  </a>
+</p>
+
+<p><strong>💻•Wenderson Júnior</strong>
+  <a href="https://www.linkedin.com/in/wenderson-junior-b4a10417b/">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px""><
+  </a>
+</p>
