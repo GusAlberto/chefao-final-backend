@@ -1,41 +1,187 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+/*Imports*/
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+require('dotenv').config()
+const express = require('express')
+const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 
-var app = express();
+const app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
-app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//Config JSON response
+app.use(express.json())
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// Models
+ const User = require('./models/User')
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+// ABRIR ROTA - ROTA PÚBLICA 
+app.get('/', (req,res) => {
+  res.status(200).json({ msg: 'Bem vindo a nossa API' })
+})
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
+// CREDENCIAIS
+const dbUser = process.env.DB_USER
+const dbPassword = process.env.DB_PASSWORD
+
+//CONECTAR AO BANCO DE DADOS
+
+//Conexão com Mongoose que conecta ao MongoDB
+const mongoose = require("mongoose");
+
+ function connectToDatabase() {
+  mongoose.connect(process.env.DATABASE_URL, {
+     useNewUrlParser: true,
+     useUnifiedTopology: true,
+  });  
+
+  const db = mongoose.connection;
+  db.on("error", (error) => console.error(error));
+  db.modelNames("open", () => console.log("Connected to the data base!"));
+}
+
+module.exports = connectToDatabase;
+
+// ROTA PRIVADA
+app.get('/user/:id', checkToken, async (req, res) => {
+
+  const id = req.params.id
+
+  // VERIFICAR SE O USUÁRIO EXISTE
+  const user = await User.findById(id, '-password')
+
+  if(!user) {
+    return res.status(404).json({ msg: 'Usuário não encontrado!'})
+  }
+
+  res.status(200).json({ user })
+})
+
+function checkToken(req, res, next) {
+
+  const authHeader = req.headers('authorization')
+  const token = authHeader && authHeader.split(" ")[1]
+
+  if(!token){
+    return res.status(401).json({ msg: 'Acesso negado!'})
+  }
+
+  try {
+    const secret = process.env.SECRET
+
+    jwt.verify(token, secret)
+
+    next()
+  } catch(error) {
+    res.status(400).json({msg: "Token inválido!"})
+  }
+}
+
+// REGISTRAR O USUÁRIO
+app.post('/auth/register', async(req, res) => {
+  const { name, lastName, email, password, confirmpassword } = req.body
+
+  // VALIDAÇÕES
+  if(!name) {
+    return res.status(422).json({ msg: 'O nome é obrigatório!' }) 
+  }  
+
+  if(!lastName) {
+    return res.status(422).json({ msg: 'O último nome é obrigatório!' }) 
+  }  
+
+  if(!email) {
+    return res.status(422).json({ msg: 'O e-mail é obrigatório!' }) 
+  }  
+
+  if(!password) {
+    return res.status(422).json({ msg: 'A senha é obrigatória!' }) 
+  }  
+
+  if(!password!== confirmpassword) {
+    return res.status(422).json({ msg: 'As senhas não conferem!' }) 
+  }  
+
+  // VERIFICAR SE O USUÁRIO JÁ EXISTE 
+  const userExists = await User.findOnde({ email: email})
+  
+  if (userExists) {
+    return res.status(422).json({ msg: 'Por favor, utilize outro e-mail' }) 
+  }  
+
+  // CRIANDO SENHA
+  const salt = await bcrypt.genSalt(12)
+  const passwordHash = await bcrypt.hash(password, salt)
+
+  // CRIANDO USUÁRIO
+  const user = new User({
+    name,
+    lastName,
+    email,
+    password: passwordHash,
+  })
+
+  try {
+    await user.save()
+
+    res.status(201).json({ msg: 'Usuário criado com sucesso' })
+  } catch(error) {
+    console.log(error)
+
+    res.status(500).json({
+      msg: 'Aconteceu um erro no servidor, tente novamente mais tarde!',
+    })
+  }
+})
+
+// LOGIN DO USUÁRIO
+app.post('/auth/login', async (req, res) =>  {
+
+  const { email, password } = req.body
+
+  // VALIDAÇÕES
+  if(!email) {
+    return res.status(422).json({ msg: 'O e-mail é obrigatório!' }) 
+  }  
+
+  if(!password) {
+    return res.status(422).json({ msg: 'A senha é obrigatória!' }) 
+  }  
+
+  // EXISTÊNCIA DO USUÁRIO
+  const user = await User.findOnde({ email: email})
+  
+  if (!user) {
+    return res.status(404).json({ msg: 'Usuário não encontrado' }) 
+  } 
+  
+  // VERIFICAÇÃO SE SENHA EXISTE
+  const checkPassword = await bcrypt.compare(password, user.password)
+
+  if(!checkPassword) {
+    return res.status(422).json({ msg: 'Senha inválida' })
+  }
+
+  try {
+    const secret = process.env.SECRET
+
+    const token = jwt.sign(
+      {
+        id: user._id,
+      },
+      secret,
+    )
+
+    res.status(200).json({ msg: 'Autenticação realizada com sucesso', token })
+
+  } catch(err) {
+    console.log(error)
+
+    res.status(500).json({
+      msg: 'Aconteceu um erro no servidor, tente novamente mais tarde!',
+    })
+  }
+
+})
 
 module.exports = app;
