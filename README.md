@@ -19,7 +19,7 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 ## Tabela de Conteúdo
 
 - [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
-- [Sobre o Projeto](#sobre-o-projeto)
+- [Sobre o Projeto](#https://github.com/wendersonjunior/chefao-final-backend/blob/main/README.md#sobre-o-projeto-)
   - [Feito Com](#feito-com)
 - [Começando](#come%C3%A7ando)
   - [Pré-requisitos](#pr%C3%A9-requisitos)
