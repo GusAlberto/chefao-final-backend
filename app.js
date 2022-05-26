@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 
 const app = express();
 
-// PASTA MODELS
+// ACESSAR PASTA MODELS
 const User = require("./models/User");
 
 // Config JSON response
@@ -48,6 +48,7 @@ function checkToken(req, res, next) {
   }
 }
 
+//ROTA PARA REGISTRAR O USUÁRIO
 app.post("/auth/register", async (req, res) => {
   const { name, lastName, email, password, confirmpassword } = req.body;
 
@@ -90,7 +91,7 @@ app.post("/auth/register", async (req, res) => {
     name,
     lastName,
     email,
-    passwordHash,
+    password: passwordHash,
   });
 
   try {
@@ -102,6 +103,7 @@ app.post("/auth/register", async (req, res) => {
   }
 });
 
+//FAZENDO LOGIN DO USUÁRIO
 app.post("/auth/login", async (req, res) => {
   const { email, password } = req.body;
 
@@ -144,9 +146,12 @@ app.post("/auth/login", async (req, res) => {
   }
 });
 
+//CREDENCIAIS
 const dbUser = process.env.DB_USER;
 const dbPassword = process.env.DB_PASS;
 
+//CONEXÃO COM BANCO DE DADOS
+ //MONGOOSE PARA MONGODB
 mongoose
   .connect(
     `mongodb+srv://${dbUser}:${dbPassword}@cluster0.vzof7.mongodb.net/?retryWrites=true&w=majority`
