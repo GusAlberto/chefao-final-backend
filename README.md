@@ -18,15 +18,15 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 
 ## Tabela de Conteúdo
 
-- [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
-- [Sobre o Projeto](#sobre-o-projeto)
-  - [Feito Com](#feito-com)
-- [Começando](#come%C3%A7ando)
-  - [Pré-requisitos](#pr%C3%A9-requisitos)
-  - [Estrutura de Arquivos](#estrutura-de-arquivos)
-- [Contribuição](#contribui%C3%A7%C3%A3o)
-- [Licença](#licen%C3%A7a)
+- [Tabela de Conteúdo](#tabela-de-conteúdo)
+- [Sobre o Projeto](#sobre-o-projeto-)
+  - [Feito Com](#feito-com-)
+- [Começando](#começando-)
+  - [Pré-requisitos](#pré-requisitos-large_orange_diamond)
+  - [Estrutura de Arquivos](#estrutura-de-arquivos-clipboard)
+- [Contribuição](#contribuição-)
 - [Contato](#contato)
+- [Nossos Mentores](#nossos-mentores)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -84,7 +84,7 @@ CHEFÃO-FINAL-BACKEND
 
 <!-- CONTRIBUTING -->
 
-## Contribuição 🤔
+## Contribuição 💡
 
 Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
 
@@ -95,34 +95,46 @@ Contribuições são o que fazem a comunidade open source um lugar incrível par
 5. Faça o Push da Branch (`git push origin feature/FeatureIncrivel`)
 6. Abra um Pull Request
 
-<!-- LICENSE -->
-
-## License :memo:
-
-This project is under the MIT license. See the [LICENSE](https://github.com/wendersonjunior/chefao-final-backend/blob/main/LICENSE) for more information.
-
 <!-- CONTACT -->
 
 ## Contato
 
-Made with ♥ by TeamHacker's :wave:
+Feito com :heart: pelos Hackers do Squad #5
 
-<p>👇[Get in touch!]👇</p>
+<p>Nos contate pelo LinkedIn! 👇</p>
 
-<p><strong>💻 Gustavo Alberto</strong> 
+<p><strong>💻 Gustavo Alberto</strong>
   <a href="https://br.linkedin.com/in/gustavo-alberto">
-   <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
+   <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
   </a>
 </p>
 
 <p><strong>💻 Hellen Viana</strong>
   <a href="https://www.linkedin.com/in/hellen-viana/">
-    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
   </a>
 </p>
 
 <p><strong>💻 Wenderson Júnior</strong>
   <a href="https://www.linkedin.com/in/wenderson-junior-b4a10417b/">
-    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
+  </a>
+</p>
+
+## Nossos Mentores
+
+Pessoas que nos ajudaram muito durante todo o percurso! :heart: 
+
+Veja o Linkedin dessas feras! 👇
+
+<p><strong>💻 Alice P.</strong>
+  <a href="https://www.linkedin.com/in/alicepaixao/">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
+  </a>
+</p>
+
+<p><strong>💻 Thiago Alvernaz</strong>
+  <a href="https://www.linkedin.com/in/thiagoalvernaz/">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
   </a>
 </p>
