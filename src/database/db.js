@@ -9,3 +9,7 @@
    app.listen(3000);
  })
  .catch((err) => console.log(err));
+ 
+//CREDENCIAIS
+const dbUser = process.env.DB_USER;
+const dbPassword = process.env.DB_PASS;
