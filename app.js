@@ -7,7 +7,8 @@ const jwt = require("jsonwebtoken");
 const app = express();
 
 // ACESSAR PASTA MODELS
-const User = require("./models/User");
+const User = require("./src/models/User");
+const Event = require("./src/models/Event");
 
 // Config JSON response
 app.use(express.json());
@@ -48,7 +49,7 @@ function checkToken(req, res, next) {
   }
 }
 
-//ROTA PARA REGISTRAR O USUÁRIO
+// ROTA PARA REGISTRAR O USUÁRIO
 app.post("/auth/register", async (req, res) => {
   const { name, lastName, email, password, confirmpassword } = req.body;
 
@@ -82,6 +83,8 @@ app.post("/auth/register", async (req, res) => {
     return res.status(422).json({ msg: "Por favor, utilize outro e-mail!" });
   }
 
+  
+
   // CRIAR SENHA
   const salt = await bcrypt.genSalt(12);
   const passwordHash = await bcrypt.hash(password, salt);
@@ -102,8 +105,10 @@ app.post("/auth/register", async (req, res) => {
     res.status(500).json({ msg: error });
   }
 });
+  // CONFIRMAÇÃO PELO E-MAIL
 
-//FAZENDO LOGIN DO USUÁRIO
+  
+// FAZENDO LOGIN DO USUÁRIO
 app.post("/auth/login", async (req, res) => {
   const { email, password } = req.body;
 
@@ -133,12 +138,14 @@ app.post("/auth/login", async (req, res) => {
   try {
     const secret = process.env.SECRET;
 
+  //AUTENTICAÇÃO COM TOKEN
     const token = jwt.sign(
       {
         id: user._id,
       },
-      secret
-    );
+      secret, {
+      expiresIn: 900,
+  });
 
     res.status(200).json({ msg: "Autenticação realizada com sucesso!", token });
   } catch (error) {
