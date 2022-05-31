@@ -20,6 +20,7 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 
 - [Tabela de Conteúdo](#tabela-de-conteúdo)
 - [Sobre o Projeto](#sobre-o-projeto-)
+  - [Objetivo](#objetivo-)
   - [Feito Com](#feito-com-)
 - [Começando](#começando-)
   - [Pré-requisitos](#pré-requisitos-large_orange_diamond)
@@ -40,7 +41,7 @@ Este projeto é feito por alunes da Stack Hacker da Squad 5 do Bootcamp #01 Gama
 
 ## Objetivo 💻
 
-Crie a infraestrutura necessária para o armazenamento e coleta de dados de um site. Isso inclui:
+Cria a infraestrutura necessária para o armazenamento e coleta de dados de um site. Isso inclui:
 
 - A configuração do banco de dados com as tabelas necessárias;
 - A criação de uma API capaz de enviar, coletar e atualizar dados;
