@@ -36,20 +36,30 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 
 ## Sobre o Projeto 💻
 
-Este projeto é feito por alunes da stack Hacker do Gama Bootcamp #1. O projeto visa a criação de uma aplicação no qual será possível encontrar a maior diversidade de eventos em Belo Horizonte-MG e região metropolitana.
+Este projeto é feito por alunes da Stack Hacker da Squad 5 do Bootcamp #01 Gama Academy. O projeto visa a criação de uma aplicação, no qual terá uma curadoria sobre lugares e eventos em Belo Horizonte - MG e região metropolitana tendo como objetivo colocar a maior quantidade possível de rolês para fácil acesso do publico, projeto feito com base na metodologia ágil onde em 5 semanas desenvolvemos, validamos e colocamos em ação todas as estratégias para a criação de um MVP.
+
+## Objetivo 💻
+
+Crie a infraestrutura necessária para o armazenamento e coleta de dados de um site. Isso inclui:
+
+- A configuração do banco de dados com as tabelas necessárias;
+- A criação de uma API capaz de enviar, coletar e atualizar dados;
+- A criação de uma página da Web para mostrar os recursos da API.
+- Tecnologias sugeridas pela Gama Academy.
 
 ### Feito Com 🚀
 
-Abaixo segue o que foi utilizado na criação deste projeto:
+Abaixo segue o que foi utilizado (tecnologias, linguagens e bibliotecas) na criação deste projeto:
 
 - [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Node+Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction)
 - [Git+GitHub](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git)
 - [Postman](https://www.postman.com/company/about-postman/)
+- [Swagger](http://www2.decom.ufop.br/terralab/documentando-sua-api-rest-com-swagger/)
+- [Heroku](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/deployment#example_installing_locallibrary_on_heroku)
 
 <!-- GETTING STARTED -->
-
 ## Começando 🏁
 
 Para conseguir utilizar o template basta fazer o download do projeto ou clonar utilizando o Git em seu terminal.
