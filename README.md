@@ -18,15 +18,16 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 
 ## Tabela de Conteúdo
 
-- [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
-- [Sobre o Projeto](#sobre-o-projeto)
-  - [Feito Com](#feito-com)
-- [Começando](#come%C3%A7ando)
-  - [Pré-requisitos](#pr%C3%A9-requisitos)
-  - [Estrutura de Arquivos](#estrutura-de-arquivos)
-- [Contribuição](#contribui%C3%A7%C3%A3o)
-- [Licença](#licen%C3%A7a)
+- [Tabela de Conteúdo](#tabela-de-conteúdo)
+- [Sobre o Projeto](#sobre-o-projeto-)
+  - [Objetivo](#objetivo-)
+  - [Feito Com](#feito-com-)
+- [Começando](#começando-)
+  - [Pré-requisitos](#pré-requisitos-large_orange_diamond)
+  - [Estrutura de Arquivos](#estrutura-de-arquivos-clipboard)
+- [Contribuição](#contribuição-)
 - [Contato](#contato)
+- [Nossos Mentores](#nossos-mentores)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -36,20 +37,30 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 
 ## Sobre o Projeto 💻
 
-Este projeto é feito por alunes da stack Hacker do Gama Bootcamp #1. O projeto visa a criação de uma aplicação no qual será possível encontrar a maior diversidade de eventos em Belo Horizonte-MG e região metropolitana.
+Este projeto é feito por alunes da Stack Hacker da Squad 5 do Bootcamp #01 Gama Academy. O projeto visa a criação de uma aplicação, no qual terá uma curadoria sobre lugares e eventos em Belo Horizonte - MG e região metropolitana tendo como objetivo colocar a maior quantidade possível de rolês para fácil acesso do publico, projeto feito com base na metodologia ágil onde em 5 semanas desenvolvemos, validamos e colocamos em ação todas as estratégias para a criação de um MVP.
+
+## Objetivo 💻
+
+Cria a infraestrutura necessária para o armazenamento e coleta de dados de um site. Isso inclui:
+
+- A configuração do banco de dados com as tabelas necessárias;
+- A criação de uma API capaz de enviar, coletar e atualizar dados;
+- A criação de uma página da Web para mostrar os recursos da API.
+- Tecnologias sugeridas pela Gama Academy.
 
 ### Feito Com 🚀
 
-Abaixo segue o que foi utilizado na criação deste projeto:
+Abaixo segue o que foi utilizado (tecnologias, linguagens e bibliotecas) na criação deste projeto:
 
 - [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Node+Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction)
 - [Git+GitHub](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git)
 - [Postman](https://www.postman.com/company/about-postman/)
+- [Swagger](http://www2.decom.ufop.br/terralab/documentando-sua-api-rest-com-swagger/)
+- [Heroku](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/deployment#example_installing_locallibrary_on_heroku)
 
 <!-- GETTING STARTED -->
-
 ## Começando 🏁
 
 Para conseguir utilizar o template basta fazer o download do projeto ou clonar utilizando o Git em seu terminal.
@@ -84,7 +95,7 @@ CHEFÃO-FINAL-BACKEND
 
 <!-- CONTRIBUTING -->
 
-## Contribuição 🤔
+## Contribuição 💡
 
 Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
 
@@ -95,34 +106,46 @@ Contribuições são o que fazem a comunidade open source um lugar incrível par
 5. Faça o Push da Branch (`git push origin feature/FeatureIncrivel`)
 6. Abra um Pull Request
 
-<!-- LICENSE -->
-
-## License :memo:
-
-This project is under the MIT license. See the [LICENSE](https://github.com/wendersonjunior/chefao-final-backend/blob/main/LICENSE) for more information.
-
 <!-- CONTACT -->
 
 ## Contato
 
-Made with ♥ by TeamHacker's :wave:
+Feito com :heart: pelos Hackers do Squad #5
 
-<p>👇[Get in touch!]👇</p>
+<p>Nos contate pelo LinkedIn! 👇</p>
 
-<p><strong>💻 Gustavo Alberto</strong> 
+<p><strong>💻 Gustavo Alberto</strong>
   <a href="https://br.linkedin.com/in/gustavo-alberto">
-   <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
+   <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
   </a>
 </p>
 
 <p><strong>💻 Hellen Viana</strong>
   <a href="https://www.linkedin.com/in/hellen-viana/">
-    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
   </a>
 </p>
 
 <p><strong>💻 Wenderson Júnior</strong>
   <a href="https://www.linkedin.com/in/wenderson-junior-b4a10417b/">
-    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px"">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
+  </a>
+</p>
+
+## Nossos Mentores
+
+Pessoas que nos ajudaram muito durante todo o percurso! :heart: 
+
+Veja o Linkedin dessas feras! 👇
+
+<p><strong>💻 Alice P.</strong>
+  <a href="https://www.linkedin.com/in/alicepaixao/">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
+  </a>
+</p>
+
+<p><strong>💻 Thiago Alvernaz</strong>
+  <a href="https://www.linkedin.com/in/thiagoalvernaz/">
+    <img src=".github/linkedin.png" alt="Ícone ou logo do Linkedin" width="50px">
   </a>
 </p>
