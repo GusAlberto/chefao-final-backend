@@ -1,5 +1,5 @@
 {
-  "name": "18_auth_node_jwt",
+  "name": "api_role",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

@@ -1,19 +1,19 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const Event = mongoose.model('models/Event',{
-    name: String,
-    banner: String,
-    date: Date,
-    schedule: Date,  
-    adress: String,
-    description: String,
-    completeAddress: String,
-    producer: String,
-    tag: String,
-    subtags: String,  
-})
+const Event = mongoose.model("Event", {
+  name: String,
+  banner: String,
+  date: Date,
+  schedule: Date,
+  adress: String,
+  description: String,
+  completeAddress: String,
+  producer: String,
+  tag: String,
+  subtags: String,
+});
 
-module.exports = Event
+module.exports = Event;
 
 /*
 name: {
