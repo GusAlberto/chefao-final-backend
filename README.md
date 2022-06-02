@@ -83,13 +83,22 @@ A estrutura de arquivos atual está da seguinte maneira:
 
 ```bash
 CHEFÃO-FINAL-BACKEND
-├── .github/logo.png
+├── .github/
+          ├ hacker.svg
+          ├ linkedin.png
+          ├ logo.png
+          └ role.png
 ├── src/
-│   └── main.js
-│   ├── main.css
-├── index.html
+│      ├── business
+│      ├── config
+│      ├── controllers
+│      └── models
+├── .env.example
 ├── .gitignore
+├── app.js
 ├── LICENSE
+├── packge-lock.json
+├── packge.json
 └── README.md
 ```
 
