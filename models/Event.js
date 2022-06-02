@@ -16,64 +16,69 @@ const Event = mongoose.model("Event", {
 module.exports = Event;
 
 /*
-name: {
+const EventSchema = new mongoose.Schema({
+  name: {
     type: String,
     unique: true,
     require: true,
-},
+  },
 
-banner: {
+  banner: {
     type: String,
     require: true,
-},
+  },
 
-date: {
+  date: {
     type: date,
     required: true,
-},
+  },
 
-schedule: {
+  schedule: {
     type: date,
     require: true,
-},
+  },
 
-address: {
+  address: {
     type: String,
     require: true,
-},
+  },
 
-description: {
+  description: {
     type: String,
     require: true,
-},
+  },
 
-completeAddress: {
+  completeAddress: {
     type: String,
-    require: true, 
-},
+    require: true,
+  },
 
-producer: {
+  producer: {
     type: String,
-    require: true,    
-},    
+    require: true,
+  },
 
-tag: {
+  tag: {
     type: String,
-    require: true, 
-},
+    require: true,
+  },
 
-subtags: {
+  subtags: {
     type: String,
-    require: true,        
-},
+    require: true,
+  },
 
-createdAt: {
+  createdAt: {
     type: Date,
     default: Date.now,
-},
+  },
 
-updatedAt: {
+  updatedAt: {
     type: Date,
-    default: Date.now 
-}
+    default: Date.now,
+  },
+});
+
+const Event = mongoose.model("Event", EventSchema);
+module.exports = Event;
 */

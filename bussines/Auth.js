@@ -9,8 +9,6 @@ module.exports = class BOAuth {
     const { name, lastName, password, confirmpassword } = req.body;
     let { email } = req.body;
     email = email.toLowerCase();
-    let { idAtivo } = req.body;
-    (idAtivo = true), false;
 
     // VALIDAÇÕES DO REGISTRO DE USUÁRIO
     if (!name) {
@@ -81,6 +79,19 @@ module.exports = class BOAuth {
     if (!user) {
       return res.status(404).json({ msg: "Usuário não encontrado!" });
     }
+
+    // VERIFICAR SE O USUÁRIO ESTÁ INATIVO
+    if (user.userActive == false) {
+      return res.status(404).json({ msg: "Usuário está inativo!" });
+    }
+
+    // DESEJA REATIVAR A CONTA?
+    /*
+    if (user.userActive == false) {
+      return res
+        .status(404)
+        .json({ msg: "Usuário está inativo!Deseja reativar sua conta?" });
+    */
 
     // CHECAR SE A SENHA CONFERE
     const checkPassword = await bcrypt.compare(password, user.password);
