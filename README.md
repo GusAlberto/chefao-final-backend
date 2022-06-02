@@ -12,6 +12,10 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 
 <h4 align="center"> 
 	:star: Desafio Gama: Hackers do Squad #5 :star:
+	<h1 align="center">
+    <img alt="ROLÊ" title="#Role" src=".github/role.png" width="250px" />
+</h1>
+	
 </h4>
 
 <!-- TABLE OF CONTENTS -->
