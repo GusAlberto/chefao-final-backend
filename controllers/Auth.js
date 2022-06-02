@@ -9,5 +9,8 @@ module.exports = class ControllerAuth {
 
     //FAZENDO LOGIN DO USUÁRIO
     app.post('/auth/login', auth.login)
+
+    //ATUALIZANDO DADOS DO USUÁRIO
+    app.patch('/auth/update', auth.update)
   }
 }

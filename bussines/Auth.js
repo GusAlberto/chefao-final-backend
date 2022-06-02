@@ -90,7 +90,7 @@ module.exports = class BOAuth {
     if (user.userActive == false) {
       return res
         .status(404)
-        .json({ msg: "Usuário está inativo!Deseja reativar sua conta?" });
+        .json({ msg: "O usuário está inativo! Deseja reativar sua conta?" });
     */
 
     // CHECAR SE A SENHA CONFERE
@@ -115,6 +115,32 @@ module.exports = class BOAuth {
         .json({ msg: "Autenticação realizada com sucesso!", token });
     } catch (error) {
       res.status(500).json({ msg: error.toString() });
+    }
+  }
+
+  //UPDATE - ATUALIZAÇÃO DE DADOS DO USUÁRIO
+  async update(req, res) {
+    console.log('TESTE HELLE')
+    const id = req.params.id
+    const { name, lastName, password } = req.body
+
+    const user = {
+      name,
+      lastName,
+      password
+    }
+    try {
+      const updatedUser = await User.updateOne({_id: id}, user)
+      
+      console.log(updatedUser)
+      if (updatedUser.matchedCount === 0){
+        res.status(422).json({ message: 'O usuário não foi encontrado!'})
+        return 
+      }
+
+      res.status(200).json(user)
+    } catch (error) {
+      res.status(500).json({ error: error })
     }
   }
 };

@@ -7,7 +7,7 @@
     "start": "nodemon app.js"
   },
   "keywords": [],
-  "author": "Gustavo Alberto <gustavoasouzasilva@gmail.com>, Hellen Viana <hellenmarcalviana@gmail.com>, Wenderson Junior <wendersonej.74@gmail.com>",
+  "author": "Gustavo Alberto <gustavoasouzasilva@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -20,5 +20,13 @@
   "devDependencies": {
     "nodemon": "^2.0.14"
   },
-  "description": ""
+  "description": "Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Academy, realizado em Belo Horizonte no ano de 2022.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendersonjunior/chefao-final-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wendersonjunior/chefao-final-backend/issues"
+  },
+  "homepage": "https://github.com/wendersonjunior/chefao-final-backend#readme"
 }
