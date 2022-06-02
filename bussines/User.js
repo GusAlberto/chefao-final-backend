@@ -6,7 +6,6 @@ module.exports = class BOUser {
 
     // CHECAR SE O USUÁRIO EXISTE
     const user = await User.findOne({ _id: id }, { password: false });
-    console.log(user);
 
     // MOSTRA QUE USUARIO ESTÁ LOGADO
     console.log("userToken", req.userToken);
