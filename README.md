@@ -84,10 +84,10 @@ A estrutura de arquivos atual está da seguinte maneira:
 ```bash
 CHEFÃO-FINAL-BACKEND
 ├── .github/
-          ├ hacker.svg
-          ├ linkedin.png
-          ├ logo.png
-          └ role.png
+│          ├─ hacker.svg
+│          ├─ linkedin.png
+│          ├─ logo.png
+│          └─ role.png
 ├── src/
 │      ├── business
 │      ├── config
