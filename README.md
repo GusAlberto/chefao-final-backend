@@ -12,9 +12,6 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 
 <h4 align="center"> 
 	:star: Desafio Gama: Hackers do Squad #5 :star:
-	<h1 align="center">
-    <img alt="ROLÊ" title="#Role" src=".github/role.png" width="250px" />
-</h1>
 	
 </h4>
 
@@ -40,6 +37,9 @@ Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Aca
 </p>
 
 ## Sobre o Projeto 💻
+<h1 align="center">
+    <img alt="ROLÊ" title="#Role" src=".github/role.png" width="250px" />
+</h1>
 
 Este projeto é feito por alunes da Stack Hacker da Squad 5 do Bootcamp #01 Gama Academy. O projeto visa a criação de uma aplicação, no qual terá uma curadoria sobre lugares e eventos em Belo Horizonte - MG e região metropolitana tendo como objetivo colocar a maior quantidade possível de rolês para fácil acesso do publico, projeto feito com base na metodologia ágil onde em 5 semanas desenvolvemos, validamos e colocamos em ação todas as estratégias para a criação de um MVP.
 
