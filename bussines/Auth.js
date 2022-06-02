@@ -6,9 +6,12 @@ require("dotenv").config();
 // REGISTRAR O USUÁRIO
 module.exports = class BOAuth {
   async register(req, res) {
-    const { name, lastName, password, confirmpassword } = req.body;
+    const { name, lastName, email, password, confirmpassword } = req.body;
+
+    /*
     let { email } = req.body;
     email = email.toLowerCase();
+    */
 
     // VALIDAÇÕES DO REGISTRO DE USUÁRIO
     if (!name) {
@@ -25,6 +28,12 @@ module.exports = class BOAuth {
 
     if (!password) {
       return res.status(422).json({ msg: "A senha é obrigatória!" });
+    }
+
+    if (!confirmpassword) {
+      return res
+        .status(422)
+        .json({ msg: "A confirmação da senha é obrigatória!" });
     }
 
     if (password != confirmpassword) {
@@ -61,6 +70,7 @@ module.exports = class BOAuth {
     }
   }
 
+  // LOGIN DO USUÁRIO
   async login(req, res) {
     const { email, password } = req.body;
 
