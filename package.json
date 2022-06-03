@@ -23,10 +23,10 @@
   "description": "Repositório referente ao back-end do desafio chefão final do Bootcamp Gama Academy, realizado em Belo Horizonte no ano de 2022.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wendersonjunior/chefao-final-backend.git"
+    "url": "git+https://github.com/GusAlberto/chefao-final-backend"
   },
   "bugs": {
-    "url": "https://github.com/wendersonjunior/chefao-final-backend/issues"
+    "url": "https://github.com/GusAlberto/chefao-final-backend/issues"
   },
-  "homepage": "https://github.com/wendersonjunior/chefao-final-backend#readme"
+  "homepage": "https://github.com/GusAlberto/chefao-final-backend#readme"
 }
