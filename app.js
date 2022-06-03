@@ -22,7 +22,6 @@ ControllerUser.configure(app);
 ControllerAuth.configure(app);
 ControllerEvent.configure(app);
 
-app.listen(process.env.PORT || 3000);
-() => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Projeto rodando na porta: ");
-};
+});
