@@ -2,6 +2,7 @@
 
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 // const path = require('path');
 const database = require("./config/Database.js");
 const ControllerUser = require("./controllers/User.js");
@@ -11,6 +12,8 @@ const ControllerEvent = require("./controllers/Event.js");
 database.connect();
 
 const app = express();
+
+app.use(cors());
 
 // app.use(express.static(path.join(__dirname, 'public')))
 // app.set('views', path.join(__dirname, 'views'))
