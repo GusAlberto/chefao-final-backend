@@ -11,26 +11,27 @@ const ControllerEvent = require("./controllers/Event.js");
 
 database.connect();
 
-const app = express();
+setTimeout(() => {
+  const app = express();
 
-app.use(cors());
+  // app.use(express.static(path.join(__dirname, 'public')))
+  // app.set('views', path.join(__dirname, 'views'))
 
-// app.use(express.static(path.join(__dirname, 'public')))
-// app.set('views', path.join(__dirname, 'views'))
+  // Open Route
+  app.get("/", (req, res) => {
+    res.status(200).json({ msg: "Bem vindo a API!" });
+  });
 
-// Open Route
-app.get("/", (req, res) => {
-  res.status(200).json({ msg: "Bem vindo a API!" });
-});
+  // Config JSON response
+  app.use(express.json());
+  app.use(cors());
 
-// Config JSON response
-app.use(express.json());
+  // Add Controllers
+  ControllerUser.configure(app);
+  ControllerAuth.configure(app);
+  ControllerEvent.configure(app);
 
-// Add Controllers
-ControllerUser.configure(app);
-ControllerAuth.configure(app);
-ControllerEvent.configure(app);
-
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Projeto rodando na porta: ");
-});
+  app.listen(process.env.PORT || 3000, () => {
+    console.log("Projeto rodando na porta: ");
+  });
+}, 3000);
