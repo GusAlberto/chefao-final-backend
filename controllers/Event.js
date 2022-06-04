@@ -1,5 +1,7 @@
-const BOEvent = require("../bussines/Event");
-const CheckToken = require("../config/checkToken");
+"use strict";
+
+const BOEvent = require("../bussines/Event.js");
+const CheckToken = require("../config/CheckToken.js");
 
 module.exports = class ControllerUser {
   static configure(app) {

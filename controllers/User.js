@@ -1,5 +1,7 @@
-const BOUser = require("../bussines/User");
-const CheckToken = require("../config/checkToken");
+"use strict";
+
+const BOUser = require("../bussines/User.js");
+const CheckToken = require("../config/CheckToken.js");
 
 module.exports = class ControllerUser {
   static configure(app) {
